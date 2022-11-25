@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Impulse| Cadastro de cliente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/img/impulse.jpg" alt="Logo Impulse" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="../pagInicial.html">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="../index.html">Projetos </a></li>
+                <li class="cabecalho__link"><a href="../telas/telasModulos/indexModulos.html"> Modulos </a></li>
+                <li class="cabecalho__link"><a href="../telas/telasRequisitos/indexRequisitos.html"> Requisitos </a></li>
+
+                <li class="cabecalho__link"><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Novo Projeto</h1>
+            <form class="flex flex--coluna" data-form>
+
+                <div class="input-container">
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required data-nome>
+                    <label class="input-label" for="nome">Nome</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+
+                <div class="input-container">
+                    <input name="dt_criacao" id="dt_criacao" class="input" type="text" placeholder="Data de Criação" required data-dt_criacao>
+                    <label class="input-label" for="dt_criacao">Data de Criação</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+
+                <div class="input-container">
+                    <input name="dt_de_inicio" id="dt_de_inicio" class="input" type="text" placeholder="Data de início" required data-dt_de_inicio>
+                    <label class="input-label" for="dt_de_inicio">Data de Início</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+
+                <div class="input-container">
+                    <input name="dt_fim" id="dt_fim" class="input" type="text" placeholder="Data do fim" required data-dt_fim>
+                    <label class="input-label" for="dt_fim">Data do fim do Projeto</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+
+                <button type="submit"class="botao">
+                Cadastrar
+            </button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="../../controller/cadastraProjetos-controller.js"></script>
+</body>
+
+
+</html>

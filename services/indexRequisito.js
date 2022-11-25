@@ -1,27 +1,25 @@
 
-const listaProjeto = () => {
-    return fetch("http://localhost:8080/projeto")
+const listaRequisito = () => {
+    return fetch("http://localhost:8080/requisito")
     .then(response => response.json())
 }
 
-const criarProjeto = (nome, dt_criacao, dt_de_inicio, dt_fim) => {
-    return fetch("http://localhost:8080/projeto", {
+const criarRequisito = (nome, idProjeto) => {
+    return fetch("http://localhost:8080/requisito", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             nome: nome,
-            dataDeCriacao: dt_criacao,
-            dataDeInicio: dt_de_inicio,
-            dataFim: dt_fim
+            projetoId: idProjeto
         })
         }).then( response => {
             return response.json().then((data) => {console.log("Sucess: ", data)})
     })
 }
 
-const removeProjeto = (id) => {
+/*const removeProjeto = (id) => {
     return fetch(`http://localhost:8080/projeto/${id}`, {
         method: "DELETE",
     })
@@ -53,13 +51,11 @@ const atualizaProjeto = (id, nome, dataCriacao, dataDeInicio, dataFim) => {
     })
     
 }
+*/
 
-export const ProjetoServices = {
-    listaProjeto,
-    criarProjeto,
-    removeProjeto,
-    detalhaProjeto,
-    atualizaProjeto
+export const RequisitoServices = {
+    listaRequisito,
+    criarRequisito
 }
 
 

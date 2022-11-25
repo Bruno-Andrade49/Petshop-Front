@@ -40,15 +40,31 @@
 }
 
 .tabela__coluna--p {
-    width: 20%;
-}
-
-.tabela__coluna--m {
-    width: 25%;
+    width: 10%;
 }
 
 .tabela__coluna--g {
-    width: 50%;
+    width: 10%;
+}
+
+.tabela__coluna--n {
+    width: 10%;
+}
+
+.tabela__coluna--h  {
+    width: 15%;
+}
+
+.tabela__coluna--m {
+    width:20%;
+}
+
+.tabela__coluna--i {
+    width:20%;
+}
+
+.tabela__coluna--j {
+    width:10%;
 }
 
 .tabela tr:last-of-type td {
@@ -57,8 +73,9 @@
 
 .tabela__botoes-controle {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    width: 100%;
+    
 }
 
 .tabela__botoes-controle li:first-of-type {

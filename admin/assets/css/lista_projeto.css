@@ -1,11 +1,12 @@
 .clientes-container {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-@media(min-width: 1200px) {
+/*@media(min-width: 1200px) {
 	.clientes-container {
 		padding-left: calc((100vw - 900px)/2);
 		padding-right: calc((100vw - 900px)/2);
 	}
 }
+*/
